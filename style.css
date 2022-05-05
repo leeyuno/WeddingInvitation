@@ -1,101 +1,80 @@
-* {
-    word-break: keep-all;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font: -apple-system-body;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+<style>
+		* {
+			word-break: keep-all;
+		}
 
-/* Text Elements */
-h1,h2 {
-    margin: 2rem;
-}
-h1 {
-    font-size: 1.7em;
-    margin-bottom: 20px;
-}
-p {
-    line-height:1.8;
-    margin-bottom: 10px;
-}
+		a {
+			text-decoration: none;
+		}
 
-a {
-    color: inherit;
-}
-/* Typography */
+		h1,
+		h2 {
+			margin: 2rem;
+		}
 
-/* Content Elements */
-body {
-    background: #fff;
-    color: #000;
-    text-align: center;
-}
+		h1 {
+			font-size: 1.7em;
+		}
 
-footer {
-    margin:2rem;
-    color: #8a8a8a;
-}
+		p {
+			line-height: 1.8;
+		}
 
-img {
-    width: 100%;
-    max-width: 600px;
-    height:auto;
-}
-.imageContainer {
-    position:relative;
-}
+		body {
+			font: -apple-system-body
+		}
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-}
+		footer {
+			margin: 2rem;
+		}
 
-.grid-item {
-    padding: 4px;
-    text-align: center;
-}
+		img {
+			width: 100%;
+			max-width: 600px;
+			height: auto;
+		}
 
-/* Content Elements */
+		.poem {
+			line-height: 2;
+		}
 
-/* NitPicky Stylings */
-.poem {
-    line-height: 2;
-}
-.suffix {
-    font-size:0.9rem;
-}
+		.suffix {
+			font-size: 0.9rem;
+		}
 
-#daumRoughmapContainer1597651152951 {
-    width:80%;
-    max-width:640px;
-    align:center;
-}
-#parents {
-    margin:2rem;
-    line-height:2.5;
-}
-#date {
-    margin:2rem;
-    line-height:2;
-}
-#address {
-    color:#8a8a8a
-}
-/* NitPicky Stylings */
+		.imageContainer {
+			position: relative;
+		}
 
-/* Dark Mode */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #222;
-        color: #ddd;
-    }
-}
+		.grid-container {
+			display: grid;
+			grid-template-columns: auto auto auto;
+			padding: 10px;
+		}
 
-/* Dynamic layout */
-@media(max-width: 600px) {
-    .wrapper {
-        padding: 40px 20px;
-    }
-}
+		.grid-item {
+			padding: 4px;
+			
+			text-align: center;
+		}
+
+		#daumRoughmapContainer1597651152951 {
+			width: 80%;
+			max-width: 640px;
+			align: center;
+		}
+
+		#parents {
+			margin: 2rem;
+			line-height: 2.5;
+		}
+
+		#date {
+			margin: 2rem;
+			line-height: 2;
+		}
+
+		#address {
+			color: #8a8a8a
+		}
+	</style>

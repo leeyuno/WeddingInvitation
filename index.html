@@ -404,25 +404,28 @@
                     경기도 용인시 처인구 백옥대로 1238
                 </p>
             </div>
-            <!-- * 카카오맵 - 지도퍼가기 -->
-<!-- 1. 지도 노드 -->
-<div id="daumRoughmapContainer1651984466350" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+            <br/>
+            <div id="map" class="wow fadeInUp" style="width:100%;height:350px;"></div>
 
-<!--
-    2. 설치 스크립트
-    * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
--->
-<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=fd6dd877f378687900c723547d27a8d9"></script>
+            <script>
+                var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+                    mapOption = {
+                        center: new kakao.maps.LatLng(32.2451910, 127.2127855), // 지도의 중심좌표
+                        level: 3 // 지도의 확대 레벨
+                    };
 
-<!-- 3. 실행 스크립트 -->
-<script charset="UTF-8">
-    new daum.roughmap.Lander({
-        "timestamp" : "1651984466350",
-        "key" : "2a5pn",
-        "mapWidth" : "640",
-        "mapHeight" : "360"
-    }).render();
-</script>
+                var map = new kakao.maps.Map(mapContainer, mapOption);
+                var markerPosition  = new kakao.maps.LatLng(32.2451910, 127.2127855);
+
+                // 마커를 생성합니다
+                var marker = new kakao.maps.Marker({
+                    position: markerPosition
+                });
+
+                // 마커가 지도 위에 표시되도록 설정합니다
+                marker.setMap(map);
+            </script>
             <br/>
                         <!-- * 카카오맵 - 지도퍼가기 -->
 
